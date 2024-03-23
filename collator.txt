@@ -1,0 +1,15 @@
+./target/release/parachain-template-node \
+--alice \
+--collator \
+--force-authoring \
+--chain raw-parachain-chainspec.json \
+--base-path /tmp/parachain/alice \
+--port 40333 \
+--rpc-port 8844 \
+-- \
+--execution wasm \
+--chain paseo.json \
+--port 30343 \
+--rpc-port 9977
+
+
